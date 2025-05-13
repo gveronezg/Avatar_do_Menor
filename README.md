@@ -1,1 +1,1 @@
-# avatar2
+# avatar-visual
