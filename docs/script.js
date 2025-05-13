@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (config.imgEsquerda) config.container.removeChild(config.imgEsquerda);
             if (config.imgDireita) config.container.removeChild(config.imgDireita);
 
-            config.imgEsquerda = criarImagem(`${categoria}-esquerda`, `./img/${config.prefixo}${novoIndice}.png`);
-            config.imgDireita = criarImagem(`${categoria}-direita`, `./img/${config.prefixo}${novoIndice}.png`);
+            config.imgEsquerda = criarImagem(`${categoria}-esquerda`, `/img/${config.prefixo}${novoIndice}.png`);
+            config.imgDireita = criarImagem(`${categoria}-direita`, `/img/${config.prefixo}${novoIndice}.png`);
 
             config.container.appendChild(config.imgEsquerda);
             config.container.appendChild(config.imgDireita);
         } else {
             if (config.imgAtiva) config.container.removeChild(config.imgAtiva);
 
-            const img = criarImagem(`${categoria}-option`, `./img/${config.prefixo}${novoIndice}.png`);
+            const img = criarImagem(`${categoria}-option`, `/img/${config.prefixo}${novoIndice}.png`);
             config.container.appendChild(img);
             config.imgAtiva = img;
         }
