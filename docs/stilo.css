@@ -42,7 +42,7 @@
 }
 
 .painel {
-    display: flex;                  /* Ativa o flexbox */
+    /* display: flex; */                  /* Ativa o flexbox */
     flex-direction: row;            /* Alinha os itens em linha */
     justify-content: space-evenly;  /* Centraliza horizontalmente */
     align-items: center;            /* Centraliza verticalmente */
