@@ -49,6 +49,12 @@
     gap: 20px;                      /* Espaço entre elementos */
     width: 100%;                    /* Largura total */
 }
+.painel button {
+    font-size: 400%;
+    border-radius: 4px;
+    border: 1px solid #333;
+    transition: background-color 0.2s ease;
+}
 
 .avatar {
     position: relative;
