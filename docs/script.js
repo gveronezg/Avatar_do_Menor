@@ -52,26 +52,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array com os nomes das peles na ordem dos índices
     const nomesPele = [
-        "Branco Claro",
-        "Branco Médio",
-        "Amarelo (Asiático)",
-        "Pardo (Misto)",
+        "Branca Clara",
+        "Branca Média",
+        "Amarela (Asiático)",
+        "Parda (Mista)",
         "Indígena",
-        "Preto Claro",
-        "Preto Médio",
-        "Preto Escuro"
+        "Preta Clara",
+        "Preta Média",
+        "Preta Escura"
     ];
 
     // Objeto com as descrições das peles
     const descricoesPele = {
-        "Branco Claro": "A pele branca clara tem origem principalmente entre populações do norte da Europa, onde a baixa exposição solar favoreceu, ao longo de milênios, a seleção de peles mais claras para facilitar a síntese de vitamina D.",
-        "Branco Médio": "Presente em regiões do sul da Europa e partes do Oriente Médio, esse tom de pele tem raízes em populações que viviam em áreas com mais sol, mas que ainda apresentavam predominância de características europeias, com uma leve pigmentação natural.",
-        "Amarelo (Asiático)": "Com origem nas populações da Ásia Oriental, como chineses, japoneses e coreanos, o tom de pele amarelo é resultado de adaptações ambientais e genéticas ao clima e à radiação solar, combinadas com traços genéticos únicos dessas regiões.",
-        "Pardo (Misto)": "A pele parda reflete a mistura genética entre europeus, africanos e indígenas, especialmente evidente em países como o Brasil, sendo fruto direto dos intensos processos de miscigenação desde a colonização das Américas.",
+        "Branca Clara": "A pele branca clara tem origem principalmente entre populações do norte da Europa, onde a baixa exposição solar favoreceu, ao longo de milênios, a seleção de peles mais claras para facilitar a síntese de vitamina D.",
+        "Branca Média": "Presente em regiões do sul da Europa e partes do Oriente Médio, esse tom de pele tem raízes em populações que viviam em áreas com mais sol, mas que ainda apresentavam predominância de características europeias, com uma leve pigmentação natural.",
+        "Amarela (Asiático)": "Com origem nas populações da Ásia Oriental, como chineses, japoneses e coreanos, o tom de pele amarelo é resultado de adaptações ambientais e genéticas ao clima e à radiação solar, combinadas com traços genéticos únicos dessas regiões.",
+        "Parda (Mista)": "A pele parda reflete a mistura genética entre europeus, africanos e indígenas, especialmente evidente em países como o Brasil, sendo fruto direto dos intensos processos de miscigenação desde a colonização das Américas.",
         "Indígena": "Os povos indígenas das Américas têm tons de pele variados, geralmente de cobreado a bronzeado, originados de antigas migrações humanas da Ásia pelo estreito de Bering há mais de 15 mil anos, adaptando-se aos diferentes climas do continente.",
-        "Preto Claro": "Com raízes principalmente em regiões do norte e centro da África, como Etiópia e Sudão, esse tom reflete uma combinação de ancestralidade subsaariana com influências de povos árabes e núbios ao longo dos séculos.",
-        "Preto Médio": "Muito comum na África Ocidental, esse tom está associado a populações que viveram por milênios em regiões de alta radiação solar, o que favoreceu a seleção de uma maior quantidade de melanina para proteger a pele.",
-        "Preto Escuro": "Associado a regiões como Sudão do Sul, Níger e partes do Congo, esse tom de pele é um dos mais ricos em melanina do mundo, resultado de adaptações genéticas a ambientes com intensa exposição solar ao longo de milhares de anos."
+        "Preta Clara": "Com raízes principalmente em regiões do norte e centro da África, como Etiópia e Sudão, esse tom reflete uma combinação de ancestralidade subsaariana com influências de povos árabes e núbios ao longo dos séculos.",
+        "Preta Média": "Muito comum na África Ocidental, esse tom está associado a populações que viveram por milênios em regiões de alta radiação solar, o que favoreceu a seleção de uma maior quantidade de melanina para proteger a pele.",
+        "Preta Escura": "Associado a regiões como Sudão do Sul, Níger e partes do Congo, esse tom de pele é um dos mais ricos em melanina do mundo, resultado de adaptações genéticas a ambientes com intensa exposição solar ao longo de milhares de anos."
     };
 
     const criarImagem = (classe, src, categoria, novoIndice) => {
