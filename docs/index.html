@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Avatar</title>
-    <link rel="stylesheet" href="stilo.css">
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/stilo.css">
 </head>
 <body>
-    <div class="pagina">
-        <div class="cabecalho">
-            <div class="saudacao">
-                <h2 class="ola">Olá</h2>
-                <h2 class="nome-aluno">{{ aluno }}</h2>
+    <div class="container mt-5">
+        <h2>Instrumental de Declaração Racial</h2>
+        <form id="formulario" method="POST">
+            <div class="form-group">
+                <label for="aluno">Aluno:</label>
+                <input type="text" class="form-control" id="aluno" name="aluno" required
+                    oninput="
+                        // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
+                        this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+                        if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
+                    "
+                >
+                <label for="idade">Idade (1-19):</label>
+                <input type="number" class="form-control" id="idade" name="idade" min="1" max="19" required
+                    oninput="
+                        // Remove caracteres não numéricos e garante valor entre 1-19
+                        this.value = this.value.replace(/[^0-9]/g, '');
+                        if (this.value > 19) this.value = 19;
+                        if (this.value < 1 && this.value !== '') this.value = 1;
+                    "
+                >
+                <label for="responsavel">Responsável:</label>
+                <input type="text" class="form-control" id="responsavel" name="responsavel" required
+                    oninput="
+                        // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
+                        this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+                        if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
+                    "
+                >
+                <label for="data">Data:</label>
+                <input type="date" class="form-control" id="data" name="data" required>
             </div>
-            <h3 class="chamada">Vamos montar seu avatar!</h3>
-        </div>
-        <div class="controles">
-            <button onclick="pele()">Pele</button>
-            <button onclick="cabelo()">Cabelo</button>
-            <button onclick="sobrancelhas()">Sobrancelhas</button>
-            <button onclick="olhos()">Olhos</button>
-            <button onclick="nariz()">Nariz</button>
-            <button onclick="boca()">Boca</button>
-        </div>
-        <br>
-        <div class="painel">
-            <button onclick="esquerda()">{-</button>
-            <div class="avatar">
-                <div class="pele"></div>
-                <div class="cabelo"></div>
-                <div class="sobrancelhas"></div>
-                <div class="olhos"></div>
-                <div class="nariz"></div>
-                <div class="boca"></div>
-            </div>
-            <button onclick="direita()">-}</button>
-        </div>
-        <div class="classificacao">
-            <h3 id="descricao"></h3>
-        </div>
+            <button type="submit" class="btn btn-primary">Continuar para Customizar Avatar</button>
+        </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // evita o envio padrão do form
+    
+            const aluno = document.getElementById('aluno').value.trim();
+    
+            if (aluno.length < 3) {
+                alert('Por favor, insira um nome de aluno com pelo menos 3 letras.');
+                return;
+            }
+    
+            // Codifica o valor para URL
+            const alunoParam = encodeURIComponent(aluno);
+    
+            // Redireciona para avatar.html passando o parâmetro aluno
+            window.location.href = `avatar.html?aluno=${alunoParam}`;
+        });
+    </script>
     <footer>
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-veronez-giolo-70a348193/" target="_blank" style="color: #00ffe6;">gveronezg</a></p>
     </footer>

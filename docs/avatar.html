@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avatar</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <div class="pagina">
+        <div class="cabecalho">
+            <div class="saudacao">
+                <h2 class="ola">Olá</h2>
+                <h2 class="nome-aluno">{{ aluno }}</h2>
+            </div>
+            <h3 class="chamada">Vamos montar seu avatar!</h3>
+        </div>
+        <div class="controles">
+            <button onclick="pele()">Pele</button>
+            <button onclick="cabelo()">Cabelo</button>
+            <button onclick="sobrancelhas()">Sobrancelhas</button>
+            <button onclick="olhos()">Olhos</button>
+            <button onclick="nariz()">Nariz</button>
+            <button onclick="boca()">Boca</button>
+        </div>
+        <br>
+        <div class="painel">
+            <button onclick="esquerda()">{-</button>
+            <div class="avatar">
+                <div class="pele"></div>
+                <div class="cabelo"></div>
+                <div class="sobrancelhas"></div>
+                <div class="olhos"></div>
+                <div class="nariz"></div>
+                <div class="boca"></div>
+            </div>
+            <button onclick="direita()">-}</button>
+        </div>
+        <div class="classificacao">
+            <h3 id="descricao"></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-veronez-giolo-70a348193/" target="_blank" style="color: #00ffe6;">gveronezg</a></p>
+    </footer>
+</body>
+</html>
