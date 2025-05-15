@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nomePeleAtual = nomesPele[indicePeleAtual] || 'desconhecida';
     
         const declarando = nomePeleAtual.split(' ')[0];
-        const mensagem = `Seu avatar sugere a declaração de pele: ${declarando}\n\nPara confirmar sua declaração clique em OK, caso contrário clique em Cancelar.`;
+        const mensagem = `Seu avatar sugere declarar sua pele como: ${declarando}\n\nPara confirmar esta declaração clique em OK, caso contrário clique em Cancelar.`;
     
         if (confirm(mensagem)) {
             window.location.href = 'index.html?msg=registro_concluido';
