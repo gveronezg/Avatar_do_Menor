@@ -1,5 +1,5 @@
 .cabecalho {
-    background-color: rgb(255, 144, 144);
+    background-color: #ffaf7a;
     text-align: center;
     margin-bottom: 3px;
 
@@ -27,12 +27,12 @@
 
 .controles {
     display: flex;
-    border: 2px solid #333;
+    border: 1px solid #333;
     padding: 3px;
 }
 .controles button {
     width: 100%;
-    font-size: 16px;
+    font-size: 23px;
     border-radius: 4px;
     border: 1px solid #333;
     transition: background-color 0.2s ease;
@@ -42,7 +42,7 @@
 }
 
 .painel {
-    /* display: flex; */                  /* Ativa o flexbox */
+    display: flex;                  /* Ativa o flexbox */
     flex-direction: row;            /* Alinha os itens em linha */
     justify-content: space-evenly;  /* Centraliza horizontalmente */
     align-items: center;            /* Centraliza verticalmente */
