@@ -5,26 +5,35 @@
     <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
-    <div class="controles">
-        <button onclick="pele()">Pele</button>
-        <button onclick="cabelo()">Cabelo</button>
-        <button onclick="sobrancelhas()">Sobrancelhas</button>
-        <button onclick="olhos()">Olhos</button>
-        <button onclick="nariz()">Nariz</button>
-        <button onclick="boca()">Boca</button>
-    </div>
-    <br>
-    <div class="painel">
-        <button onclick="esquerda()">{-</button>
-        <div class="avatar">
-            <div class="pele"></div>
-            <div class="cabelo"></div>
-            <div class="sobrancelhas"></div>
-            <div class="olhos"></div>
-            <div class="nariz"></div>
-            <div class="boca"></div>
+    <div class="pagina">
+        <div class="cabecalho">
+            <div class="saudacao">
+                <h2 class="ola">Olá</h2>
+                <h2 class="nome-aluno">{{ aluno }}</h2>
+            </div>
+            <h3 class="chamada">Vamos montar seu avatar!</h3>
         </div>
-        <button onclick="direita()">-}</button>
+        <div class="controles">
+            <button onclick="pele()">Pele</button>
+            <button onclick="cabelo()">Cabelo</button>
+            <button onclick="sobrancelhas()">Sobrancelhas</button>
+            <button onclick="olhos()">Olhos</button>
+            <button onclick="nariz()">Nariz</button>
+            <button onclick="boca()">Boca</button>
+        </div>
+        <br>
+        <div class="painel">
+            <button onclick="esquerda()">{-</button>
+            <div class="avatar">
+                <div class="pele"></div>
+                <div class="cabelo"></div>
+                <div class="sobrancelhas"></div>
+                <div class="olhos"></div>
+                <div class="nariz"></div>
+                <div class="boca"></div>
+            </div>
+            <button onclick="direita()">-}</button>
+        </div>
     </div>
     <script src="script.js"></script>
     <footer>
