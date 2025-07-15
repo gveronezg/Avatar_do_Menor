@@ -45,7 +45,7 @@
 }
 
 .cabecalho {
-    background-color: #ffaf7a;
+    background-color: rgb(0, 111, 190);
     text-align: center;
     margin-bottom: 3px;
 
@@ -58,7 +58,7 @@
         margin: 0;
     }
     .nome-aluno {
-        color: #FFC300;
+        color: white;
         font-weight: bold;
         margin: 0;
     }
@@ -180,7 +180,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #ffaf7a;
+    background-color: rgba(67, 162, 229, 0.623);
     border: 1px solid #ced4da;       /* borda cinza clara */
     border-radius: 0.25rem;          /* borda arredondada */
     cursor: pointer;
