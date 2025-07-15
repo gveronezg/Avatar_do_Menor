@@ -7,39 +7,47 @@
     <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Instrumental de Declaração Racial</h2>
+    <div class="container">
+        <p class="titulo">Instrumental de Declaração Racial</p>
         <form id="formulario" method="POST">
             <div class="form-group">
-                <label for="aluno">Aluno:</label>
-                <input type="text" class="form-control" id="aluno" name="aluno" required
-                    oninput="
-                        // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
-                        this.value = this.value.replace(/[^A-Za-z\s]/g, '');
-                        if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
-                    "
-                >
-                <label for="idade">Idade (1-19):</label>
-                <input type="number" class="form-control" id="idade" name="idade" min="1" max="19" required
-                    oninput="
-                        // Remove caracteres não numéricos e garante valor entre 1-19
-                        this.value = this.value.replace(/[^0-9]/g, '');
-                        if (this.value > 19) this.value = 19;
-                        if (this.value < 1 && this.value !== '') this.value = 1;
-                    "
-                >
-                <label for="responsavel">Responsável:</label>
-                <input type="text" class="form-control" id="responsavel" name="responsavel" required
-                    oninput="
-                        // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
-                        this.value = this.value.replace(/[^A-Za-z\s]/g, '');
-                        if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
-                    "
-                >
-                <label for="data">Data:</label>
-                <input type="date" class="form-control" id="data" name="data" required>
+                <div class="div-input">
+                    <label for="aluno">Aluno</label>
+                    <input type="text" class="form-control" id="aluno" name="aluno" required
+                        oninput="
+                            // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
+                            this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+                            if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
+                        "
+                    >
+                </div>
+                <div class="div-input">
+                    <label for="idade">Idade (1-19)</label>
+                    <input type="number" class="form-control" id="idade" name="idade" min="1" max="19" required
+                        oninput="
+                            // Remove caracteres não numéricos e garante valor entre 1-19
+                            this.value = this.value.replace(/[^0-9]/g, '');
+                            if (this.value > 19) this.value = 19;
+                            if (this.value < 1 && this.value !== '') this.value = 1;
+                        "
+                    >
+                </div>
+                <div class="div-input">
+                    <label for="responsavel">Responsável</label>
+                    <input type="text" class="form-control" id="responsavel" name="responsavel" required
+                        oninput="
+                            // Remove caracteres não alfabéticos e garante que o valor tenha pelo menos 3 letras
+                            this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+                            if (this.value.length < 3 && this.value !== '') this.value = this.value.slice(0, 3);
+                        "
+                    >
+                </div>
+                <div class="div-input">
+                    <label for="data">Data</label>
+                    <input type="date" class="form-control" id="data" name="data" required>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Continuar para Criar seu Avatar</button>
+            <button type="submit" class="btn">Continuar para Criar seu Avatar</button>
         </form>
     </div>
     <script>

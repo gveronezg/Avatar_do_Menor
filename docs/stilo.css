@@ -1,3 +1,49 @@
+.container {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 4%;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5dvb;
+    color: rgb(0, 111, 190);
+    margin: 0;
+    padding: 0;
+}
+
+.form-group{
+    font-family: 'Poppins', sans-serif;
+}
+.form-group .div-input {
+    background-color: rgba(67, 162, 229, 0.623);
+    border-radius: 4px;
+    padding: 1%;
+    margin: 1% 0;
+}
+.form-group label {
+    font-size: 3dvb;
+    margin-bottom: 5px;
+}
+.form-group input {
+    font-size: 2dvb;
+    height: auto;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+}
+.btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5dvb;
+    background-color: rgb(0, 111, 190);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
 .cabecalho {
     background-color: #ffaf7a;
     text-align: center;
@@ -8,17 +54,14 @@
         gap: 10px;
         justify-content: center;
     }
-
     .ola {
         margin: 0;
     }
-  
     .nome-aluno {
         color: #FFC300;
         font-weight: bold;
         margin: 0;
     }
-  
     .chamada {
         margin-top: 0;
         margin-bottom: 0;
